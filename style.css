@@ -39,9 +39,11 @@ body{
     border-radius: 12px;
 }
 
-.buxusy .blox{
-    display: inline-block;
-    
+.buxusy{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .blox{
@@ -52,6 +54,10 @@ body{
     text-align: center;
     border: 3px solid black;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .buxusy a{

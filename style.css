@@ -1,12 +1,19 @@
 header{
-    background-color: blue;
+    background-image: linear-gradient(rgba(128, 0, 128, 1), rgba(128, 0, 128, 0));
 }
 
-header li ul{
+.menu{
+    list-style: none;
     display: flex;
+    padding: 10px;
+}
+
+.menu li a{
+    
 }
 body{
-    background-color: aqua;
+    background-image: linear-gradient(black, purple);
+
 }
 
 .momentalne{
@@ -17,8 +24,11 @@ body{
 .logo h1{
     text-align: center;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 110px;
     font-family: Quantico;
+    background: linear-gradient(white, gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .logo p {
     text-align: center;

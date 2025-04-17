@@ -1,0 +1,32 @@
+.instagram-icon {
+    font-size: 100px;
+    transition: 1s;
+}
+
+.twitter-icon {
+    font-size: 100px;
+    transition: 1s;
+}
+
+.discord-icon {
+    font-size: 100px;
+    transition: 1s;
+}
+
+.instagram-icon:hover {
+    background: linear-gradient(45deg, black, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.twitter-icon:hover {
+    background: linear-gradient( yellow, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.discord-icon:hover {
+    background: linear-gradient(315deg, black, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

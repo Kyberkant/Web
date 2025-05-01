@@ -1,18 +1,22 @@
 header{
-    background-image: linear-gradient(rgba(128, 0, 128, 1), rgba(128, 0, 128, 0));
+    background-image: linear-gradient(rgba(128, 0, 128, 1), rgba(128, 0, 128, 0.5));
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 30px;
     top: 0;
+    position: sticky;
+    z-index: 1000;
 }
 
 .menu{
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 0;
+    margin: 0;
+    gap: 30px;
 }
 
 .menu li a{
@@ -20,15 +24,18 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
-    padding: 34px 10px;
-    display: block;
-    
+    font-size: 18px;
+    padding: 10px 12px;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
     
 }
 body{
     background-image: linear-gradient(purple,black, purple);
-
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .momentalne{
@@ -51,18 +58,34 @@ body{
     text-align: center;
     font-weight: 900;
     font-size: 110px;
-    font-family: Quantico;
+    font-family: Quantico, sans-serif;
     background: linear-gradient(white, gray);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+    letter-spacing: 3px;
 }
 
 header h1{
+    font-family: Quantico, sans-serif;
     font-weight: 800;
     font-size: 50px;
     background: linear-gradient(white, gray);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+    letter-spacing: 3px;
+    transition: font-size 0.3s ease-in-out;
+}
+
+header.shrink {
+    padding: 3px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+header.shrink .header h1 {
+    font-size: 21px;
+    transition: font-size 0.3s ease-in-out;
 }
 
 .logo p {
@@ -220,8 +243,8 @@ footer p{
     background: linear-gradient(black, yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-   
-    
+   text-shadow: 0 0 10px #f0f, 0 0 20px #ff0;
+    transform: scale(1.1);
 }
 
 .buxusy a:hover{
@@ -234,17 +257,21 @@ footer p{
 }
 
 .momentalne:hover{
-    text-shadow: 
+    /* text-shadow: 
   0 0 10px #f00, 
   0 0 15px #f80, 
-  0 0 20px #ff0;
-
+  0 0 20px #ff0; */
+  background: linear-gradient(black, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ text-shadow: 0 0 10px #f0f, 0 0 20px #ff0;
+  transform: scale(1.1);
 }
 
 .menu li a:hover{
     text-shadow: 0 0 10px yellow;
     transform: scale(1.05);
-    transition: 0.3s;
+    
 }
 
 @keyframes fadeInUp {

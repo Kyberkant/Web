@@ -6,16 +6,16 @@
 }
 
 .blox-super{
-    width: 300px;
-    height: 310px;
+    width: 600px;
+    height: 600px;
     background-color: black;
     color: white;
     margin: 10px;
+    margin-top: 75px;
     text-align: center;
     border: 3px solid gray;
     border-radius: 12px;
     padding: 10px;
-    margin-top: 20px;
     transition: 2s;
     box-shadow: 0 0 30px rgb(194, 194, 194);
     font-size: 20px;
@@ -27,27 +27,45 @@
     
 }
 
+.blox-super h1{
+    font-family: Quantico, sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    background: linear-gradient(white, gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .tlacitecko {
     background: linear-gradient(white, gray);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    padding: 15px 30px;
-    font-size: 15px;
-    border: none;
+    width: 50%;
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: "Quantico", sans-serif;
+    background-color: #222;
+    color: white;
+    border: 2px solid #555;
+    border-radius: 20px;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
 }
 
 .inputy{
-padding: 15px;
-margin: 15px;
-font-size: 15px;
-border: none;
-outline: none;
-margin-bottom: 10px;
-border: none;
-border: 3px solid rgb(194, 194, 194);
+    width: 80%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    font-family: "Quantico", sans-serif;
+    background-color: #222;
+    border: 2px solid #555;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
 
@@ -59,4 +77,9 @@ border: 3px solid rgb(194, 194, 194);
 
 .tlacitecko:active{
     box-shadow: inset 5px 5px 10px gray, inset -5px -5px 10px white;
+}
+
+.tlacitecko:hover {
+    background-color: #333;
+    border-color: white;
 }

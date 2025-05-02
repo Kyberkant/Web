@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="cz">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galerie.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
             <li class="neaktivni"><a href="index.html">Domů</a></li>
             <li class="neaktivni"><a href="tutorialy.html">Tutoriáli</a></li>
             <li class="momentalne"><a href="galerie.html">Galerie</a></li>
-            <li class="neaktivni"><a href="kontakt.html">Kontak</a></li>
+            <li class="neaktivni"><a href="kontakt.html">Kontakt</a></li>
             <li class="neaktivni"><a href="problem.html"><i class="fa-solid fa-triangle-exclamation problem"></i></a></li>
         </ul>
         
@@ -27,9 +28,27 @@
         <div class="logo">
             <h1>Galerie</h1>
             
-            <p>Prozkoumejte moje úžasné umělecká díla.</p>
+            <p><strong>Prozkoumejte moje úžasné umělecká díla.</strong></p>
+        </div>
+
+        <div class="boxik">
+            <div class="realBox">
+                <div class="buxusy">
+                    <div class="galerie_box">
+                    
+                        <i class="fa-solid fa-arrow-left sipkaL"></i>
+                        <img id="galerie_obrazek" src="obrazky/1.png" alt="galerie">
+                        <i class="fa-solid fa-arrow-right sipkaR"></i>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <p>vytvořil <strong>Jakub Němec</strong> všechna práva vyhrazena</p>
+    </footer>
 
     <script>
         window.addEventListener("scroll", function () {
@@ -40,6 +59,31 @@
                 header.classList.remove("shrink");
             }
         });
+    </script>
+
+    <script>
+        const obrazky = [
+            "obrazky/1.png",
+            "obrazky/2.png",
+            "obrazky/3.png",
+            "obrazky/4.png",
+            "obrazky/5.png"
+            
+        ];
+
+        let index = 0;
+        const imgEl = document.getElementById("galerie_obrazek");
+
+        document.querySelector(".sipkaR").addEventListener("click", function() {
+            index = (index + 1) % obrazky.length;
+            imgEl.src = obrazky[index];
+        });
+        document.querySelector(".sipkaL").addEventListener("click", function() {
+            index = (index - 1 + obrazky.length) % obrazky.length;
+            imgEl.src = obrazky[index];
+        });
+
+
     </script>
 </body>
 </html>
